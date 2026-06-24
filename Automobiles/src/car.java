@@ -1,4 +1,4 @@
-public class car extends Vehicle {
+public class car extends Vehicle implements Drivable{
 
     public car(){
         super("car");
@@ -12,4 +12,8 @@ public class car extends Vehicle {
         System.out.println(this.name + " honks");
     }
 
+    @java.lang.Override
+    public void drive() {
+        honk();
+    }
 }
